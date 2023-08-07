@@ -1,4 +1,4 @@
-package org.example.member;
+package org.example.order;
 
 import org.assertj.core.api.Assertions;
 import org.example.AppConfig;
@@ -6,31 +6,30 @@ import org.example.meber.Grade;
 import org.example.meber.Member;
 import org.example.meber.MemberService;
 import org.example.meber.MemberServiceImpl;
+import org.example.order.Order;
+import org.example.order.OrderService;
+import org.example.order.OrderServiceImpl;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-public class MemberServiceTest {
+public class OrderServiceTest {
+
     MemberService memberService;
+    OrderService orderService;
 
     @BeforeEach
     public void beforeEach(){
         AppConfig appConfig = new AppConfig();
         memberService = appConfig.memberService();
-
+        orderService = appConfig.orderService();
     }
 
-    // 지금 코드는 DI를 위반 하고 있음
     @Test
-    void join(){
-        //given
-        Member member = new Member(1L, "memberA", Grade.VIP);
-
-        //when
+    void createOrder(){
+        long memberId = 1L;
+        Member member = new Member(memberId, "memberA", Grade.VIP);
         memberService.join(member);
-        Member findMember = memberService.findMember(1L);
-
-        //then
-        // 녹색불이 떠야 대여,, 그러면 기분이가 조커든요..
-        Assertions.assertThat(member).isEqualTo(findMember);
+        Order order = orderService.createOrder(memberId, "itemA", 10000);
+        Assertions.assertThat(order.getDiscountPrice()).isEqualTo(1000);
     }
 }

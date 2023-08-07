@@ -7,7 +7,9 @@ import org.example.meber.MemberServiceImpl;
 
 public class Main {
     public static void main(String[] args) {
-        MemberService memberService = new MemberServiceImpl();
+        AppConfig appConfig = new AppConfig();
+//        MemberService memberService = new MemberServiceImpl();
+        MemberService memberService = appConfig.memberService();
         // commend option v
         // ctrl + alt + v
         Member memberA = new Member(1L, "memberA", Grade.VIP);

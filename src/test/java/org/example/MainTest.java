@@ -1,4 +1,4 @@
-package org.example.member;
+package org.example;
 
 public class MainTest {
     //psvm + 엔터
