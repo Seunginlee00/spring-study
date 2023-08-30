@@ -1,23 +1,25 @@
 plugins {
-    id 'java'
     id 'org.springframework.boot' version '2.3.3.RELEASE'
     id 'io.spring.dependency-management' version '1.0.10.RELEASE'
+    id 'java'
 }
 
 group 'org.example'
 version '0.0.1-SNAPSHOT'
 sourceCompatibility = '11'
+
 repositories {
     mavenCentral()
 }
 
 dependencies {
+    //spring-core라는 스프링의 핵심만 들어가 있음..
     implementation 'org.springframework.boot:spring-boot-starter'
     testImplementation('org.springframework.boot:spring-boot-starter-test'){
         exclude group: 'org.junit.vintage', module: 'junit-vintage-engine'
     }
 }
 
-    test {
+test {
     useJUnitPlatform()
 }
