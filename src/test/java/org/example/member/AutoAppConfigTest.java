@@ -1,7 +1,6 @@
 package org.example.member;
 
 import org.example.AutoAppConfig;
-import org.example.meber.MemberService;
 import org.junit.jupiter.api.Test;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;

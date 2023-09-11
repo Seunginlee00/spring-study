@@ -1,12 +1,10 @@
 package org.example.beanfind;
 import org.example.AppConfigSpring;
-import org.example.meber.MemberService;
-import org.example.meber.MemberServiceImpl;
-import org.junit.jupiter.api.Assertions;
+import org.example.member.MemberService;
+import org.example.member.MemberServiceImpl;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.NoSuchBeanDefinitionException;
-import org.springframework.beans.factory.config.BeanDefinition;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 import static org.assertj.core.api.Assertions.*;

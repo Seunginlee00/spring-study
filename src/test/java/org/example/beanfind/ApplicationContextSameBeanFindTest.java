@@ -1,6 +1,6 @@
 package org.example.beanfind;
-import org.example.meber.MemberRepository;
-import org.example.meber.MemoryMemberRepository;
+import org.example.member.MemberRepository;
+import org.example.member.MemoryMemberRepository;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.NoUniqueBeanDefinitionException;

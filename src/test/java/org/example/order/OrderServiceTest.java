@@ -2,13 +2,9 @@ package org.example.order;
 
 import org.assertj.core.api.Assertions;
 import org.example.AppConfig;
-import org.example.meber.Grade;
-import org.example.meber.Member;
-import org.example.meber.MemberService;
-import org.example.meber.MemberServiceImpl;
-import org.example.order.Order;
-import org.example.order.OrderService;
-import org.example.order.OrderServiceImpl;
+import org.example.member.Grade;
+import org.example.member.Member;
+import org.example.member.MemberService;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 

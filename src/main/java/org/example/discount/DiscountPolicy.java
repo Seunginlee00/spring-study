@@ -1,6 +1,6 @@
 package org.example.discount;
 
-import org.example.meber.Member;
+import org.example.member.Member;
 
 public interface DiscountPolicy {
     // 대신 주입 시켜주는 대상이 있어야한다.

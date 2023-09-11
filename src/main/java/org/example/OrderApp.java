@@ -1,12 +1,10 @@
 package org.example;
 
-import org.example.meber.Grade;
-import org.example.meber.Member;
-import org.example.meber.MemberService;
-import org.example.meber.MemberServiceImpl;
+import org.example.member.Grade;
+import org.example.member.Member;
+import org.example.member.MemberService;
 import org.example.order.Order;
 import org.example.order.OrderService;
-import org.example.order.OrderServiceImpl;
 
 public class OrderApp {
     public static void main(String[] args) {

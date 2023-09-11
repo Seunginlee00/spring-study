@@ -1,6 +1,6 @@
 package org.example.xml;
 
-import org.example.meber.MemberService;
+import org.example.member.MemberService;
 import org.junit.jupiter.api.Test;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.GenericXmlApplicationContext;

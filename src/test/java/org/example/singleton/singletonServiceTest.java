@@ -1,7 +1,6 @@
 package org.example.singleton;
-import org.example.AppConfig;
 import org.example.AppConfigSpring;
-import org.example.meber.MemberService;
+import org.example.member.MemberService;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.springframework.context.ApplicationContext;

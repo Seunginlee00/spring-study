@@ -1,7 +1,7 @@
 package org.example.singleton;
 import org.example.AppConfigSpring;
-import org.example.meber.MemberRepository;
-import org.example.meber.MemberServiceImpl;
+import org.example.member.MemberRepository;
+import org.example.member.MemberServiceImpl;
 import org.example.order.OrderServiceImpl;
 import org.junit.jupiter.api.Test;
 import org.springframework.context.ApplicationContext;

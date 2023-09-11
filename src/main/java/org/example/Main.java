@@ -1,9 +1,8 @@
 package org.example;
 
-import org.example.meber.Grade;
-import org.example.meber.Member;
-import org.example.meber.MemberService;
-import org.example.meber.MemberServiceImpl;
+import org.example.member.Grade;
+import org.example.member.Member;
+import org.example.member.MemberService;
 
 public class Main {
     public static void main(String[] args) {

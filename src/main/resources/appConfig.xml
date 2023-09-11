@@ -2,11 +2,11 @@
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
-    <bean id="memberService" class="org.example.meber.MemberServiceImpl">
+    <bean id="memberService" class="org.example.member.MemberServiceImpl">
         <constructor-arg name="memberRepository" ref="memberRepository" />
     </bean>
     <bean id="memberRepository"
-          class="org.example.meber.MemoryMemberRepository" />
+          class="org.example.member.MemoryMemberRepository" />
     <bean id="orderService" class="org.example.order.OrderServiceImpl">
         <constructor-arg name="memberRepository" ref="memberRepository" />
         <constructor-arg name="discountPolicy" ref="discountPolicy" />

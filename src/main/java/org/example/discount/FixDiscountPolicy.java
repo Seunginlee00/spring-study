@@ -1,7 +1,7 @@
 package org.example.discount;
 
-import org.example.meber.Grade;
-import org.example.meber.Member;
+import org.example.member.Grade;
+import org.example.member.Member;
 
 public class FixDiscountPolicy implements DiscountPolicy{
 

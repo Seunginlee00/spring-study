@@ -1,8 +1,8 @@
 package org.example;
 
-import org.example.meber.Grade;
-import org.example.meber.Member;
-import org.example.meber.MemberService;
+import org.example.member.Grade;
+import org.example.member.Member;
+import org.example.member.MemberService;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 

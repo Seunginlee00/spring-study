@@ -2,10 +2,6 @@ package org.example.member;
 
 import org.assertj.core.api.Assertions;
 import org.example.AppConfig;
-import org.example.meber.Grade;
-import org.example.meber.Member;
-import org.example.meber.MemberService;
-import org.example.meber.MemberServiceImpl;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 

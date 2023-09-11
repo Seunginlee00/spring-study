@@ -1,4 +1,4 @@
-package org.example.meber;
+package org.example.member;
 
 public interface MemberService {
     void join(Member member);
