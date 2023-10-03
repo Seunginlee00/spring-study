@@ -1,5 +1,6 @@
 package org.example.order;
 
+import org.example.annotation.MainDiscountPolicy;
 import org.example.discount.DiscountPolicy;
 import org.example.member.Member;
 import org.example.member.MemberRepository;
@@ -21,8 +22,9 @@ public class OrderServiceImpl implements OrderService{
 //        this.discountPolicy = discountPolicy;
 //    }
 
+    //requeridargsconstructor -> 아래의 생성자를 자동으로 만들어줌
     @Autowired
-    public OrderServiceImpl(MemberRepository memberRepository, DiscountPolicy discountPolicy){
+    public OrderServiceImpl(MemberRepository memberRepository, @MainDiscountPolicy DiscountPolicy discountPolicy){
         this.memberRepository = memberRepository;
         this.discountPolicy = discountPolicy;
     }
