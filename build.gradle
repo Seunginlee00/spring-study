@@ -27,6 +27,12 @@ dependencies {
     testImplementation('org.springframework.boot:spring-boot-starter-test'){
         exclude group: 'org.junit.vintage', module: 'junit-vintage-engine'
     }
+//JSR-330 Provider
+    implementation 'javax.inject:javax.inject:1'
+
+    //web
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+
 }
 
 test {
