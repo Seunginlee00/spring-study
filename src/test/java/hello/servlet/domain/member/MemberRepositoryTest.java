@@ -10,6 +10,7 @@ class MemberRepositoryTest {
     void afterEach() {
         memberRepository.clearStore();
     }
+    //test 주석
     @Test
     void save() {
         //given
